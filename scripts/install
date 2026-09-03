@@ -63,7 +63,7 @@ pushd "$install_dir"
 popd
 
 chown $app:www-data "$install_dir"
-chown -R $app:www-data "$install_dir
+chown -R $app:www-data "$install_dir" 
 
 #=================================================
 # START SYSTEMD SERVICE
