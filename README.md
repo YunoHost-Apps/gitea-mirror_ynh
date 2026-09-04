@@ -8,7 +8,7 @@ It shall NOT be edited by hand.
   Gitea Mirror, packaged for YunoHost
 </h1>
 
-Gitea Mirror auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI
+Auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://gitea-mirror.raylabs.io/)
 [![Version: 3.32.0~ynh1](https://img.shields.io/badge/Version-3.32.0~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/gitea-mirror/)
