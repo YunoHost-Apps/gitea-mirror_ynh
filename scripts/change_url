@@ -21,6 +21,13 @@ ynh_script_progression "Updating NGINX web server configuration..."
 # this will most likely adjust NGINX config correctly
 ynh_config_change_url_nginx
 
+ynh_script_progression "Updating $app's configuration files..."
+
+app_key=$(ynh_app_setting_get --app=$app --key=app_key)
+ynh_config_add --template=".env" --destination="$install_dir/.env"
+chmod 400 "$install_dir/.env"
+chown "$app:$app" "$install_dir/.env"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
