@@ -4,12 +4,12 @@ packaging_format = 2
 
 id = "gitea-mirror"
 name = "Gitea Mirror"
-description.en = "Gitea Mirror auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI"
-description.fr = "Gitea Mirror synchronise automatiquement les dépôts GitHub vers votre instance Gitea/Forgejo auto-hébergée, le tout via une interface web élégante."
+description.en = "Auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI"
+description.fr = "Synchronise automatiquement les dépôts GitHub vers votre instance Gitea/Forgejo auto-hébergée, le tout via une interface web élégante."
 
 version = "3.32.0~ynh1"
 
-maintainers = [""]
+maintainers = ["DeMiro5001"]
 
 [upstream]
 license = "AGPL-3.0"
