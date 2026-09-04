@@ -67,10 +67,6 @@ ynh_script_progression "Starting $app's systemd service..."
 
 ynh_systemctl --service="$app" --action="start"
 
-#temporary denug
-which bun
-bun -v
-
 #=================================================
 # END OF SCRIPT
 #=================================================
