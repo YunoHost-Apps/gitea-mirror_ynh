@@ -18,10 +18,6 @@ Auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI
 <a href="https://github.com/YunoHost-Apps/gitea-mirror_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
-
-## Screenshots
-![Screenshot of Gitea Mirror](./doc/screenshots/example.jpg)
-
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/gitea-mirror)](https://ci-apps.yunohost.org/ci/apps/gitea-mirror/)
