@@ -52,7 +52,7 @@ ynh_config_add_logrotate
 ynh_script_progression "Installing $app (it may take a while)..."
 
 pushd "$install_dir"
-     npm install -g bun
+     npm install -g bun --allow-scripts=bun
      bun install
      bun run build
 popd
