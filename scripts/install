@@ -4,9 +4,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-source _common.sh
 source /usr/share/yunohost/helpers
-
 
 #=================================================
 # INITIALIZE AND STORE SETTINGS
@@ -21,7 +19,6 @@ ynh_app_setting_set --key=app_key --value=$app_key
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
-
 chown -R "$app:www-data" "$install_dir"
 
 #=================================================
@@ -30,7 +27,6 @@ chown -R "$app:www-data" "$install_dir"
 ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template=".env" --destination="$install_dir/.env"
-
 chmod 400 "$install_dir/.env"
 chown "$app:$app" "$install_dir/.env"
 
@@ -39,7 +35,6 @@ chown "$app:$app" "$install_dir/.env"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config using the conf/nginx.conf template
 ynh_config_add_nginx
 
 ynh_config_add_systemd
@@ -57,9 +52,9 @@ ynh_config_add_logrotate
 ynh_script_progression "Installing $app (it may take a while)..."
 
 pushd "$install_dir"
-    ynh_hide_warnings npm install -g bun
-    ynh_hide_warnings bun install
-    ynh_hide_warnings bun run build
+     npm install -g bun
+     bun install
+     bun run build
 popd
 
 chown $app:www-data "$install_dir"
