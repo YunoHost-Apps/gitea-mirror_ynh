@@ -7,7 +7,7 @@ name = "Gitea Mirror"
 description.en = "Auto-syncs GitHub repos to your self-hosted Gitea/Forgejo, with a sleek Web UI"
 description.fr = "Synchronise automatiquement les dépôts GitHub vers votre instance Gitea/Forgejo auto-hébergée, le tout via une interface web élégante."
 
-version = "3.53.0~ynh1"
+version = "3.54.0~ynh1"
 
 maintainers = ["DeMiro5001"]
 
@@ -46,8 +46,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/RayLabsHQ/gitea-mirror/archive/refs/tags/v3.53.0.tar.gz"
-    sha256 = "d9ab7fb692873c7d2d9b79bbf481ae43fd7bd405d5ea7731906007b9b335e360"
+    url = "https://github.com/RayLabsHQ/gitea-mirror/archive/refs/tags/v3.54.0.tar.gz"
+    sha256 = "9109f02f863d6d6bf2f4b0de94f7fea0232640d694f9c8e52acb15ebcc384a49"
 
     autoupdate.strategy = "latest_github_tag"
 
